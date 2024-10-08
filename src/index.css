@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Noto Sans", sans-serif, Inter, system-ui, Avenir, Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: green;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* buttons */
+
+.btn {
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 11px 24px;
+}
+
+.btn-small {
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  padding: 8.5px 16px;
+}
+
+.btn-primary-dark {
+  @apply bg-dark transition-all text-whitee hover:bg-opacity-90;
+}
+.btn-outline-primary-white {
+  @apply bg-transparent transition-all text-whitee border-whitee border;
+}
+
+.btn-outline-secondary {
+  @apply bg-transparent text-dark border transition-all border-grays-4-500 hover:border-grays-5-600;
+}
+
+/* tertiary button */
+
+.tertiary {
+  @apply cursor-pointer flex transition-all items-start gap-2 hover:gap-4;
+}
+
+.tertiary dark {
+  @apply text-dark;
+}
+.tertiary normal {
+  @apply text-whitee;
+}
+
+.heading1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.heading2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.heading3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.heading4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.heading5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.heading6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.large {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.body {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.bodyMedium {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.small {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.xs {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.xxs {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+}
